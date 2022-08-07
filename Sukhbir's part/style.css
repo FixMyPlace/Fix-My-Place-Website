@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.landing_page {
+    /* margin: 0;
+    padding: 0; */
+    /* background-color: black; */
+    width: 100%;
+    min-height: 80vh;
+    background-image: url(../Images/furn.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.header___section {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #FFFFFF;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    padding: 0px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.header___section .logo {
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #333;
+}
+
+.header___section .navbar___section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header___section .navbar___section ul li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    float: left;
+}
+
+.header___section .navbar___section ul li a {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+}
+
+.header___section .navbar___section ul li a:hover {
+    background: #333;
+    color: #FFFFFF;
+}
+
+.header___section .navbar___section ul li .class__shake {
+    font-weight: bold;
+    background: transparent;
+    color: black;
+}
+
+.header___section .navbar___section ul li .class__shake:hover {
+    font-weight: bold;
+    background: transparent;
+    color: black;
+}
+
+.header___section .navbar___section ul li ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #FFF;
+    display: none;
+}
+
+.header___section .navbar___section ul li ul li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.header___section .navbar___section ul li ul li ul {
+    margin: 0;
+    padding: 0;
+    left: 200px;
+    top: 0;
+}
+
+.header___section .navbar___section ul li:focus-within>ul,
+.header___section .navbar___section ul li:hover>ul {
+    display: initial;
+}
+
+#menu-bar {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.header___section label {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+.class__shake {
+    -webkit-animation: shake .5s ease-in-out .5s infinite alternate;
+}
+
+.quotes {
+    text-align: center;
+    font-size: 50px;
+}
+
+.quotes p {
+    font-family: 'Rowdies', cursive;
+}
+
+.text {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.text span {
+    color: #8B4513;
+    font-weight: bolder;
+}
+
+input[type=submit] {
+    font-size: large;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: #FEF8DD;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #FFE598;
+}
+
+input[type=submit]:hover {
+    background-color: #FFE598;
+}
+
+.landing_page__container {
+    border-radius: 20px;
+    background-color: #DEB887;
+    float: right;
+    width: 400px;
+    margin-top: 120px;
+    margin-right: 40px;
+    padding: 20px;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textbox_container {
+    width: 90%;
+    overflow: hidden;
+    font-size: 20px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+}
+
+.textbox {
+    overflow: hidden;
+    font-size: 20px;
+    margin: 10px 15px;
+    border-bottom: 1px solid black;
+}
+
+.textbox i {
+    margin-top: 5px;
+    width: 26px;
+    float: left;
+    text-align: center;
+    color: black;
+}
+
+.textbox input {
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    font-size: 20px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+
+.checkbox_container {
+    margin: 20px auto;
+    width: 90%;
+}
+
+/* Testimonial Code Below */
+
+
+/* Responsive Code Below */
+
+@media(max-width: 991px) {
+    .header___section {
+        padding: 20px;
+    }
+
+    .header___section label {
+        display: initial;
+    }
+
+    .header___section .navbar___section {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #FFF;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    .header___section .navbar___section ul li {
+        width: 100%;
+    }
+
+    .header___section .navbar___section ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    .header___section .navbar___section ul li ul li {
+        background: #EEE;
+    }
+
+    .header___section .navbar___section ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked~.navbar___section {
+        display: initial;
+    }
+}
+
+@media(max-width: 450px) {
+    .landing_page {
+        min-height: 75vh;
+    }
+
+    .landing_page__container {
+        width: 350px;
+        margin: 0 20px;
+        margin-top: 60px;
+    }
+
+    .quotes {
+        font-size: 40px;
+    }
+
+    .text {
+        font-size: 40px;
+    }
+
+    .text span {
+        color: #8B4513;
+        font-weight: bolder;
+    }
+}
+
+@-webkit-keyframes shake {
+    from {
+        -webkit-transform: rotate(15deg)
+    }
+
+    to {
+        -webkit-transform: rotate(-15deg);
+        -webkit-transform-origin: center center;
+    }
+}

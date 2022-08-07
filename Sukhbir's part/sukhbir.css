@@ -1,0 +1,188 @@
+.wood-color {
+	background: #FEF8DD;
+	/*		background:#DEB887;*/
+}
+
+img {
+	padding: 0px 8px 0px 8px;
+}
+
+/*for whatsapp fixed*/
+.fixedbutton {
+	position: fixed;
+	bottom: 15px;
+	right: 0px;
+
+}
+
+.fixedimage {
+	width: 144px;
+	height: 50px;
+	padding: 0px;
+}
+
+.more-offer, .work-style {
+	padding: 0px;
+	margin: 0 0 -20px 0;
+}
+
+@media (max-width:991px) {
+	.more-offer {
+		padding: 0px;
+		margin: 0 0 -20px 0;
+	}
+
+	.card-body-sm {
+		padding: 20px 3px;
+	}
+}
+
+@media (max-width: 575px) {
+	.h-230 {
+		/* height: 230px; */
+		height: auto;
+	}
+
+	img {
+		height: 130px;
+		padding: 0px 20px 0px 20px;
+	}
+
+	.remove-mb-4 {
+		margin-top: 0;
+	}
+
+	.more-offer, .work-style {
+		padding: 0 15px;
+	}
+
+	.more-offer {
+		margin: 0px 0px 1px 0px;
+	}
+
+	.work-style {
+		margin: 0px 0px 2px 0px;
+	}
+}
+
+/* self created classes*/
+.orange-icon {
+	color: orange;
+	font-size: 40px;
+}
+
+.blue-icon {
+	color: #0091ff;
+	font-size: 50px;
+}
+
+.green-icon {
+	color: green;
+	font-size: 50px;
+}
+
+.green-icon:hover {
+	color: rgba(0, 128, 0, .6);
+}
+
+.h-95 {
+	height: 95%;
+}
+
+.h-90 {
+	height: 90%;
+}
+
+
+/*footer styles */
+.footer-links {
+	color: black;
+}
+
+.footer-links:hover {
+	color: rgb(255, 255, 255, .6);
+	text-decoration: none;
+}
+
+.footer-icon {
+	font-size: 24px;
+}
+
+.font-15 {
+	font-size: 20px;
+}
+
+.wb-icon {
+	font-size: 27px;
+}
+
+/*whatsapp icon size chnage for proper align*/
+.home-icon {
+	margin-right: 10px;
+}
+
+/*for text align with other text in list*/
+.footer-sub {
+	/* border: 1px solid black;
+	background: #808080; */
+}
+
+.footer-sub>li {
+	font-size: 20px;
+}
+
+/* >=576 && <768(col-sm)*/
+@media (max-width: 767px) {
+	.font-15 {
+		font-size: 15px;
+	}
+
+	.icon-s {
+		font-size: 16px;
+	}
+
+	.wb-icon {
+		font-size: 20px;
+		margin-right: -2px;
+	}
+
+	.footer-sub>li {
+		font-size: 16px;
+	}
+}
+
+/* for <576 (col)
+ pb-r = padding for right box 
+ pb-l = padding for left box 
+*/
+@media (max-width: 575px) {
+	.font-15 {
+		font-size: 13px;
+	}
+
+	.icon-s {
+		font-size: 16px;
+	}
+
+	.wb-icon {
+		font-size: 20px;
+		margin-right: -2px;
+	}
+
+	.footer-sub>li {
+		font-size: 15px;
+	}
+
+	.pb-l {
+		padding: 0 8px 0 8px;
+	}
+
+	.pb-r {
+		padding: 0 8px 0 0px;
+	}
+
+	.pb-r, .pb-l {
+		margin-bottom: -8px;
+	}
+
+}

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix My Homes</title>
+
+    <!-- UNICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- Custom CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Custom CSS File Link -->
+    <link rel="stylesheet" href="sukhbir.css">
+
+    <!-- Type Writer Effect CDN JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+    <!-- Font Awesome 6 Script -->
+    <script src="https://kit.fontawesome.com/3771ec5064.js" crossorigin="anonymous"></script>
+
+    <!-- Swipper CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <style type="text/css">
+            .input-group{
+                width: 210px;
+                border: none;
+                border-radius: 20px;
+            }
+            .form-control{
+                border-radius: 7px;
+                border: 1.5px solid orange;
+            }
+            input.form-control:focus{
+                box-shadow: none;
+                border: 1.5px solid coral;
+                background-color: #F7F8FD !important;
+                /*letter-spacing: 1px;*/
+            }
+            .btn{
+                background-color: burlywood;
+                border-radius: 7px;
+            }
+            .btn:focus{
+                box-shadow: none;
+            }
+            .text{
+                font-size: 13px;
+                color: #9CA1A4;
+            }
+            @media screen and (max-width: 450px){
+                .card{
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
+        </style>
+</head>
+<body>
+    <header class="header___section">
+        <a href="#" class="logo">FixMyHome</a>
+        <!-- search bar here -->
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search Services Here...">
+            <div class="input-group-append"><button class="btn"><i class="fa-solid fa-mag"></i></button></div>
+        </div>
+        <nav class="navbar___section">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#whyus">Why Us</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <!-- <li><a href="#">Pages <i class="uil uil-angle-down"></i></a>
+                    <ul>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Services <i class="uil uil-angle-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li> -->
+                <li><a href="#">Services <i class="uil uil-angle-down"></i></a>
+                    <ul>
+                        <li><a href="services/painting.html">Painting</a></li>
+                        <li><a href="services/plumbing.html">Plumbing</a></li>
+                        <li><a href="services/carpenter.html">Carpenter</a></li>
+                        <li><a href="services/furniture.html">Furniture</a></li>
+                    </ul>
+                </li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a class="class__shake" href="contactus.html">+91 1234567890</a></li>
+            </ul>
+        </nav>
+        <a href="#"><i class ="fa-solid fa-user-vneck"></i></a>
+    </header>
+
+    <div class="landing_page">
+        <div class="landing_page__container">
+            <h1>Let's Connect</h1>
+            <form action="/action_page.php">
+                <div class="textbox_container" style="margin-top: 20px;">
+                    <div class="textbox">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                </div>
+        
+                <div class="textbox_container" style="margin-top: 20px;">
+                    <div class="textbox">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="text" placeholder="Phone Number" required>
+                    </div>
+                </div>
+        
+                <div class="textbox_container" style="margin-top: 20px;">
+                    <div class="textbox">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email ID" required>
+                    </div>
+                </div>
+        
+                <div class="textbox_container" style="margin-top: 20px;">
+                    <div class="textbox">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="Location" required>
+                    </div>
+                </div>
+        
+                <div class="checkbox_container">
+                    <label for="terms">
+                        <input type="checkbox" required> I agree to Terms and Conditions
+                    </label>
+                </div>
+        
+                <input type="submit" value="Get Free Estimate">
+            </form>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="quotes">
+        <p>From attics to basements, and everything in between !</p>
+    </div>
+
+    <br>
+    <div class="text">Specialized in <span class="typing"></span></div>
+
+
+    <!-- Section Why Us -->
+    <br><br><br>
+    <section id="whyus">
+        <div class="text-center h1"><strong>Why Choose FixMyHome?</strong></div>
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 h-230">
+                    <div class="card d-flex flex-column align-items-center wood-color" style="min-width:auto; width:auto;">
+                        <div class="card-title text-center mt-3">
+                            Free Onsite Visit
+                        </div>
+                        <img src="./Images/ssk1.jpeg" class="card-img " alt="...">
+                        <div class="card-body" style="padding-top:0px;">
+                            <div class="d-flex align-items-center justify-content-center mt-3">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa omnis ut molestiae a! 
+                                Aliquid libero ullam quas quisquam recusandae. Sed ratione tempora distinctio odit 
+                                accusamus animi laboriosam velit molestiae esse!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 h-230">
+                    <div class="card d-flex flex-column align-items-center wood-color" style="min-width:auto; width:auto;">
+                        <div class="card-title text-center mt-3">
+                            Trained Professionals
+                        </div>
+                        <img src="./Images/ssk1.jpeg" class="card-img " alt="...">
+                        <div class="card-body" style="padding-top:0px;">
+                            <div class="d-flex align-items-center justify-content-center mt-3">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa omnis ut molestiae a!
+                                Aliquid libero ullam quas quisquam recusandae. Sed ratione tempora distinctio odit
+                                accusamus animi laboriosam velit molestiae esse!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 h-230">
+                    <div class="card d-flex flex-column align-items-center wood-color" style="min-width:auto; width:auto;">
+                        <div class="card-title text-center mt-3">
+                            Supervised Work
+                        </div>
+                        <img src="./Images/ssk1.jpeg" class="card-img " alt="...">
+                        <div class="card-body" style="padding-top:0px;">
+                            <div class="d-flex align-items-center justify-content-center mt-3">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa omnis ut molestiae a!
+                                Aliquid libero ullam quas quisquam recusandae. Sed ratione tempora distinctio odit
+                                accusamus animi laboriosam velit molestiae esse!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 h-230">
+                    <div class="card d-flex flex-column align-items-center wood-color">
+                        <div class="card-title text-center mt-3">
+                            Stringent Safety Protocols
+                        </div>
+                        <img src="./Images/ssk1.jpeg" class="card-img " alt="...">
+                        <div class="card-body" style="padding-top:0px;">
+                            <div class="d-flex align-items-center justify-content-center mt-3">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa omnis ut molestiae a!
+                                Aliquid libero ullam quas quisquam recusandae. Sed ratione tempora distinctio odit
+                                accusamus animi laboriosam velit molestiae esse!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 colmd-6 col-lg-3 mb-4 h-230">
+                    <div class="card d-flex flex-column align-items-center wood-color">
+                        <div class="card-title text-center mt-3">
+                            Personalized Color Consultation
+                        </div>
+                        <img src="./Images/ssk1.jpeg" class="card-img " alt="...">
+                        <div class="card-body" style="padding-top:0px;">
+                            <div class="d-flex align-items-center justify-content-center mt-3">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa omnis ut molestiae a!
+                                Aliquid libero ullam quas quisquam recusandae. Sed ratione tempora distinctio odit
+                                accusamus animi laboriosam velit molestiae esse!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 colmd-6 col-lg-3 mb-4 h-230">
+                    <div class="card d-flex flex-column align-items-center wood-color">
+                        <div class="card-title text-center mt-3">
+                            Mechanized Tools
+                        </div>
+                        <img src="./Images/ssk1.jpeg" class="card-img " alt="...">
+                        <div class="card-body" style="padding-top:0px;">
+                            <div class="d-flex align-items-center justify-content-center mt-3">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa omnis ut molestiae a!
+                                Aliquid libero ullam quas quisquam recusandae. Sed ratione tempora distinctio odit
+                                accusamus animi laboriosam velit molestiae esse!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 colmd-6 col-lg-3 h-230">
+                    <div class="card d-flex flex-column align-items-center wood-color">
+                        <div class="card-title text-center mt-3">
+                            Site Sanitization
+                        </div>
+                        <img src="./Images/ssk1.jpeg" class="card-img " alt="...">
+                        <div class="card-body" style="padding-top:0px;">
+                            <div class="d-flex align-items-center justify-content-center mt-3">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa omnis ut molestiae a!
+                                Aliquid libero ullam quas quisquam recusandae. Sed ratione tempora distinctio odit
+                                accusamus animi laboriosam velit molestiae esse!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- What More Does FixMyHomes Offer ? -->
+    <br><br><br>
+    <div class="text-center h1"><strong>What More Does FixMyHome offer?</strong></div>
+    <br>
+    <div class="card-group">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-3 col-sm-3 more-offer">
+    
+                    <div class="card h-90">
+                        <div class="card-body">
+                            <div class="text-center pb-1">
+                                <i class="fas fa-tags orange-icon"></i>
+                            </div>
+                            <p class="card-title text-center h5"><b>Genuine Pricing</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 more-offer">
+                    <div class="card h-90">
+                        <div class="card-body">
+                            <div class="text-center pb-1">
+                                <i class="fas fa-layer-group orange-icon"></i>
+                            </div>
+                            <p class="card-title text-center h5"><b>Custom Designs</b></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-3 col-sm-3 more-offer">
+                    <div class="card h-90">
+                        <div class="card-body">
+                            <div class="text-center pb-1">
+                                <i class="fas fa-user-tie orange-icon"></i>
+                            </div>
+                            <p class="card-title text-center h5"><b>Dedicated Project Managers</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Testimonial for Website -->
+    
+
+    <!-- Section About Us -->
+    <section id="aboutus">
+
+    </section>
+
+
+
+    <!-- How FixMyHomes Work ? -->
+    <br><br><br>
+    <div class="text-center h1"><strong>How FixMyHome Work?</strong></div>
+    <br>
+    <div class="card-group pb-4">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-3 col-sm-3  work-style">
+                    <div class="card h-95">
+                        <div class="card-body card-body-sm">
+                            <div class="text-center ">
+                                <i class="far fa-calendar-check blue-icon"></i>
+                            </div>
+                            <p class="card-title text-center h3 pt-1"><b>Plan</b></p>
+                            <p class="card-text text-center">Schedule a free on-site consultation by
+                                giving us a call </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3  work-style">
+                    <div class="card h-95">
+                        <div class="card-body card-body-sm">
+                            <div class="text-center pb-1">
+                                <i class="far fa-images blue-icon"></i>
+                            </div>
+                            <p class="card-title text-center h3 pt-1"><b>Preview</b></p>
+                            <p class="card-text text-center">Get personalized design & color
+                                assistance to your living space</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-3 col-sm-3  work-style">
+                    <div class="card h-95">
+                        <div class="card-body card-body-sm">
+                            <div class="text-center pb-1">
+                                <i class="fas fa-tools blue-icon"></i>
+                            </div>
+                            <p class="card-title text-center h3 pt-1"><b>Execution</b></p>
+                            <p class="card-text text-center">See FixMyHome's expert workers beautifully transform your
+                                space</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer Section -->
+    <br><br><br>
+    <footer class="page footer pb-0" style="background: #DEB887;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-sm-4 col-md-4 col-6 pb-l">
+                    <p class="font-weight-bold mb-1 font-15 pt-2">PAINTING SERVICES</p>
+                    <ul class="list-unstyled footer-sub">
+                        <li>
+                            <a href="#!" class="footer-links">&nbspInterior Painting</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="footer-links">&nbspExterior Painting</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="footer-links">&nbspMetal Painting</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="footer-links">&nbspWood Painting</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-4 col-sm-4 col-md-4 col-6 pb-r">
+                    <p class="font-weight-bold mb-1 font-15 pt-2">PLUMBING SERVICES</p>
+                    <ul class="list-unstyled footer-sub">
+                        <li>
+                            <a href="#!" class="footer-links">&nbspRepairing Pipe Systems</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="footer-links">&nbspEjector Pump Repair</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="footer-links">&nbspGas Leak Detection</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="footer-links">&nbspDrainage Fixing</a>
+                        </li>
+    
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-md-4 col-6 pb-l">
+                    <p class="font-weight-bold mb-1 font-15 pt-2">CARPENTRY SERVICES</p>
+                    <ul class="list-unstyled footer-sub">
+                        <li>
+                            <a href="#!" class="footer-links">&nbspMinor Masonry Repair</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="footer-links">&nbspFurniture Assembly </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="footer-links">&nbspWooden Partition</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="footer-links">&nbspCabinet Carpentry</a>
+                        </li>
+    
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-12 col-md-12 col-6 link-uncolored">
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-4 col-md-4 col-12 pb-r">
+                            <p class="font-weight-bold mb-1 font-15 pt-2">CONTACT US</p>
+                            <ul class="list-unstyled footer-sub">
+                                <li class="mb-1 ml-1">
+                                    <a href="https://goo.gl/maps/jg7qr4iNsUHyvEck8" class="footer-links">
+                                        <i class="fas fa-building icon-s footer-icon home-icon"></i>New York, NY 10012
+                                    </a>
+                                </li>
+                                <li class="mb-1 ml-1">
+                                    <a href="mailto:8282917@gmail.com" class="footer-links">
+                                        <i class="fas fa-envelope pr-1  footer-icon icon-s"></i>&nbspinfo@example.com
+                                    </a>
+                                </li>
+                                <li class="mb-1 ml-1">
+                                    <a href="tel:95274-68445" class="footer-links">
+                                        <i class="fas fa-phone pr-1 footer-icon  icon-s"></i>&nbsp0123456788
+                                    </a>
+                                </li>
+                                <li class="ml-1">
+                                    <a href="https://api.whatsapp.com/send?phone=919527568445&amp;text=Hi" target="_blank"
+                                        class="footer-links">
+                                        <i class="fab fa-whatsapp pr-1 footer-icon  icon-s wb-icon"></i>&nbsp0123456789
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="col-xl-12 col-lg-12 col-sm-4 col-md-4 col-12 pb-r">
+                            <p class="font-weight-bold mb-1 font-15 pt-2">FOLLOW US</p>
+                            <ul class="list-unstyled footer-sub">
+                                <li class="mb-1">&nbsp
+                                    <a href="https://fb.com" class="footer-links">
+                                        <i class="fab fa-facebook pr-2 footer-icon icon-s pt-1"></i>Facebook
+                                    </a>
+                                </li>
+                                <li>&nbsp
+                                    <a href="https://instagram.com" class="footer-links">
+                                        <i class="fab fa-instagram pr-2 footer-icon  icon-s"></i>Instagram
+                                    </a>
+                                </li>
+                                <ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    
+        <div class="fixedbutton zindex-fixed clearfix">
+            <a href="https://api.whatsapp.com/send?phone=919527468445&amp;text=Hi" target="_blank">
+                <img class="fixedimage" src="./Images/whatsapp-button.webp">
+            </a>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-white text-center pt-2 pb-2" style="background: #383838;">© 2022 Copyright:
+            <a href="#" class="footer-links text-white"> FIXMYHOME.COM</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <!-- Typing Animation Script -->
+    <script>
+        var typed = new Typed(".typing", {
+            strings: ["Wall Painting", "Interior Painting", "Exterior Painting", "Metal Painting", "Wood Painting", "Wallpapers",
+                "Tap Fitting", "Water Leakage", "Repairs & Fixes", "Pipe Fitting", "Carpenting", "Modular Kitchen Fittings",
+                "Profile Section Fitting", "Curtain Fitting", "Window Making & Repairs", "Bathroom Accessories", "Aluminium Fabrication", 
+                "Doors & Drawers Locks", "Cabinets", "Mirrors", "Ladders", "Mashes", "Safes and Lockers", "Furnitures", "Folding Beds", 
+                "Folding Tables", "Wooden Beds", "Cupboards"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+    </script>
+
+    <!-- Initialize Swiper -->
+    <!-- <script type="module">
+        // import Swiper from 'swiper/swiper-bundle.esm.js';
+        // import 'swiper/swiper-bundle.css';
+        var swiper = new Swiper('.swiper', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script> -->
+
+    <!-- Swipper JS CDN -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>
