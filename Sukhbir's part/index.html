@@ -38,7 +38,7 @@
         crossorigin="anonymous"></script>
         <style type="text/css">
             .input-group{
-                width: 230px;
+                width: 300px;
                 min-width: 100px;
                 border: none;
                 border-radius: 20px;
@@ -75,15 +75,19 @@
 </head>
 <body>
     <header class="header___section">
-        <a href="#" class="logo">FixMyHome</a>
-         <!-- search bar here -->
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search Services Here...">
-            <div class="input-group-append"><button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button></div>
+        <div class="header-section-1">
+            <!-- logo here -->
+            <div>
+            <a href="#" class="logo">FixMyHome</a>
+            </div>
+            <!-- search bar here -->
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search Services Here...">
+                <div class="input-group-append"><button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button></div>
+            </div>
         </div>
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar"><i class="uil uil-bars" style="font-size: 30px; font-weight: bolder;"></i></label>
-
         <nav class="navbar___section">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -102,7 +106,7 @@
                     </ul>
                 </li> -->
                 <li><a href="#">Services <i class="uil uil-angle-down"></i></a>
-                    <ul>
+                    <ul class="sub-services-list">
                         <li><a href="painting.html">Painting</a></li>
                         <li><a href="services/plumbing.html">Plumbing</a></li>
                         <li><a href="carpenter.html">Carpenter</a></li>
@@ -111,7 +115,7 @@
                 </li>
                 <li><a href="contactus.html">Contact Us</a></li>
                 <li><a class="class__shake" href="contactus.html">+91 1234567890</a></li>
-                <li><a href="#"><i class="fa-solid fa-user-check"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
             </ul>
         </nav>
     </header>
