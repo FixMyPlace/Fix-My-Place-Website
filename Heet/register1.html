@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SignUp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script
+        type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Custom Theme files -->
+    <link href="register1.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- //web font -->
+</head>
+
+<body>
+    <!-- main -->
+    <div class="main-w3layouts wrapper">
+        <h1>SignUp Form</h1>
+        <div class="main-agileinfo">
+            <div class="agileits-top">
+                <form name="RegistrationForm" action="register.php" method="POST">
+                    <input class="text" name="regName" id="regName" type="text" placeholder="Full Name" required>
+                    <span id="blankName" style="color:red"></span>
+                    
+                    <input class="text" name="regPhone" id="regPhone" type="tel" placeholder="Phone Number" required>
+                    <span id="wrongPhone" style="color:red"></span>
+
+                    <input class="text email"  type="email" name="regEmail" id="regEmail" placeholder="Email" required>
+                    <span id="wrongEmail" style="color:red"></span>
+
+                    <input class="text" type="text" name="regAddress" id="regAddress" placeholder="Address" required>
+                    
+                    <input class="text" type="password" name="regPassword" id="regPassword" placeholder="Password" required>
+                    <span id="password1" style="color:red"></span>
+
+                    <input class="text" type="password" name="regRepass" id="regRepass" placeholder="Confirm Password" required>
+                    <span id="password2" style="color:red"></span>
+
+                    <input type="submit" name="regBtn" id="regBtn" value="SIGNUP" onclick="return validateForm()">
+                </form>
+                <p>Already have an Account? <a href="#"> Login Now!</a></p>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="copy-agile">
+            <p>© 2022 FixMyPlace Signup Form. All rights reserved | Design by FixMyPlace</p>
+        </div>
+    </div>
+    <!-- //main -->
+
+    <!-- Script For Form Details Validation -->
+    <script>
+        function validateForm() {
+            //collect form data in JavaScript variables  
+            var pw1 = document.getElementById("regPassword").value;
+            var pw2 = document.getElementById("regRepass").value;
+            var name = document.getElementById("regName").value;
+            var phone = document.getElementById("regPhone").value;
+            var address = document.getElementById("regAddress").value;
+            var email = document.getElementById("regEmail").value;
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+            //Check if name has number
+            if (!isNaN(name)) {
+                document.getElementById("blankName").innerHTML = "Name cannot be blank and cannot have numbers";
+                return false;
+            }
+
+            //Check if phone number is valid
+            if (phone.length != 10) {
+                document.getElementById("wrongPhone").innerHTML = "Phone number be of exactly 10 digits";
+                return false;
+            }
+
+            //Check if email id valid
+            if (!email.match(mailformat)) {
+                document.getElementById("wrongEmail").innerHTML = "Please enter a valid email address";
+                return false;
+            }
+
+            //minimum password length validation  
+            if (pw1.length < 8) {
+                document.getElementById("password1").innerHTML = "Password length must be atleast 8 characters";
+                return false;
+            }
+
+            //maximum length of password validation  
+            if (pw1.length > 20) {
+                document.getElementById("password1").innerHTML = "Password length must not exceed 20 characters";
+                return false;
+            }
+
+            if (pw1 != pw2) {
+                document.getElementById("password2").innerHTML = "Confirm passwords does not match. Please try again!";
+                return false;
+            }
+            window.location.href = "login.html";
+        } 
+    </script>
+</body>
+
+</html>
